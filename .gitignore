@@ -37,3 +37,5 @@ Assets/Prefabs/Materials.meta
 Assets/Material.meta
 *.meta
 Assets/Prefabs/Materials.meta
+Assets/Scripts/PlayerController.cs
+Assets/Scripts/PlayerController.cs
