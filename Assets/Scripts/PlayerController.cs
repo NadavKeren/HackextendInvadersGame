@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
     [SerializeField]
-    private int speed;
+    private int speed;    
 
     [SerializeField]
     private int resWidth;
@@ -14,23 +14,38 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D body;
     private int moveX;
     private int moveY;
-    public GameObject shot;
+    public GameObject mainShot;
+    public GameObject secondaryShot;
     public Transform shotSpawn;
+    public Transform leftWing;
+    public Transform rightWing;
     [SerializeField]
     public float fireRate;
+    private float secondaryRate;
 
-    private float nextFire;
+    private float nextMain;
+    private float nextSecondary;
+    private bool isSecondShot = false;
+    private GameObject leftSecond;
+    private GameObject rightSecond;
 
-    void FireWeapon()
+    void fireMainWeapon()
     {
-        nextFire = Time.time + fireRate;
-        Instantiate(shot, shotSpawn.position, Quaternion.Euler(0,0,0));
+        nextMain = Time.time + fireRate;
+        Instantiate(mainShot, shotSpawn.position, Quaternion.Euler(0,0,0));
+    }
+    void fireSecondaryWeapon()
+    {
+        nextSecondary = Time.time + secondaryRate;
+        leftSecond = Instantiate(secondaryShot, leftWing.position, Quaternion.Euler(0, 0, 0)) as GameObject;
+        rightSecond = Instantiate(secondaryShot, rightWing.position, Quaternion.Euler(0, 0, 0)) as GameObject;
+        isSecondShot = true;
     }
 	// Use this for initialization
 	void Start () {
         body = GetComponent<Rigidbody2D>();
-
         Screen.SetResolution(resWidth, resHeight, true);
+        secondaryRate = 0.5f * fireRate;
 	}
 	
 	// Update is called once per frame
@@ -54,8 +69,16 @@ public class PlayerController : MonoBehaviour {
         else if (Input.GetKey(KeyCode.LeftArrow))
             moveX = -1;
         else moveX = 0;
-        if (Input.GetKey(KeyCode.Space) && Time.time > nextFire)
-            FireWeapon();
+        if (Input.GetKey(KeyCode.Space) && Time.time > nextMain)
+            fireMainWeapon();
+        if (Input.GetKey(KeyCode.LeftControl))
+            fireSecondaryWeapon();
+        else if (isSecondShot)
+        {
+            GameObject.Destroy(leftSecond,1);
+            GameObject.Destroy(rightSecond,1);
+            isSecondShot = false;
+        }
     }
 
     private void FixedUpdate()
