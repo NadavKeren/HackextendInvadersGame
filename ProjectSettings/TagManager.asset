@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - GameBorder
+  - smallExp
+  - New Tag
   layers:
   - Default
   - TransparentFX
