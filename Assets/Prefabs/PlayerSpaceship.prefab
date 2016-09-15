@@ -86,6 +86,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  resWidth: 1366
+  resHeight: 768
 --- !u!212 &212000013876071204
 SpriteRenderer:
   m_ObjectHideFlags: 1

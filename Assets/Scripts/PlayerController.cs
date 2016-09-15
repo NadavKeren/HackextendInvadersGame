@@ -6,6 +6,11 @@ public class PlayerController : MonoBehaviour {
     [SerializeField]
     private int speed;
 
+    [SerializeField]
+    private int resWidth;
+    [SerializeField]
+    private int resHeight;
+
     private Rigidbody2D body;
     private int moveX;
     private int moveY;
@@ -13,6 +18,8 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         body = GetComponent<Rigidbody2D>();
+
+        Screen.SetResolution(resWidth, resHeight, true);
 	}
 	
 	// Update is called once per frame
