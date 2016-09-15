@@ -9,7 +9,18 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D body;
     private int moveX;
     private int moveY;
+    public GameObject shot;
+    public Transform shotSpawn;
+    [SerializeField]
+    public float fireRate;
 
+    private float nextFire;
+
+    void FireWeapon()
+    {
+        nextFire = Time.time + fireRate;
+        Instantiate(shot, shotSpawn.position, Quaternion.Euler(0,0,0));
+    }
 	// Use this for initialization
 	void Start () {
         body = GetComponent<Rigidbody2D>();
@@ -36,17 +47,12 @@ public class PlayerController : MonoBehaviour {
         else if (Input.GetKey(KeyCode.LeftArrow))
             moveX = -1;
         else moveX = 0;
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && Time.time > nextFire)
             FireWeapon();
     }
 
     private void FixedUpdate()
     {
         body.velocity = new Vector2(moveX * speed, moveY * speed);
-    }
-
-    void FireWeapon()
-    {
-
-    }
+    }    
 }
