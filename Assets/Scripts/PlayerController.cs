@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour {
         minY = -5 + renderer.bounds.extents.y;
         maxY = 5 - renderer.bounds.extents.y;
 
-        secondaryRate = 0.5f * fireRate;
+        secondaryRate = 0.75f * fireRate;
 	}
 	
 	// Update is called once per frame
@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour {
             fireMainWeapon();
         if (Input.GetKey(KeyCode.LeftControl))
             fireSecondaryWeapon();
-        else if (isSecondShot)
+        if (isSecondShot)
         {
             GameObject.Destroy(leftSecond,1);
             GameObject.Destroy(rightSecond,1);
@@ -99,6 +99,7 @@ public class PlayerController : MonoBehaviour {
     void fireSecondaryWeapon()
     {
         nextSecondary = Time.time + secondaryRate;
+        nextMain = Time.time + fireRate;
         leftSecond = Instantiate(secondaryShot, leftWing.position, Quaternion.Euler(0, 0, 0)) as GameObject;
         rightSecond = Instantiate(secondaryShot, rightWing.position, Quaternion.Euler(0, 0, 0)) as GameObject;
         isSecondShot = true;
