@@ -102,6 +102,7 @@ GameObject:
   - 50: {fileID: 237664323}
   - 60: {fileID: 237664322}
   - 114: {fileID: 237664326}
+  - 114: {fileID: 237664327}
   m_Layer: 0
   m_Name: Asteroid
   m_TagString: Untagged
@@ -278,6 +279,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 1852142738}
   playerExplosion: {fileID: 419234545}
+--- !u!114 &237664327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 237664321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d925e0c41a71247aa73cb5ce3d1a4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
 --- !u!1 &419234545
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,7 +401,8 @@ Prefab:
       propertyPath: m_SortingLayerID
       value: 1209255263
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114000011183586218, guid: 689b06b5ada1d4e4aa2ff039b512084a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 689b06b5ada1d4e4aa2ff039b512084a, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1464063246
@@ -575,6 +589,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!1 &1907300668 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012558947414, guid: 689b06b5ada1d4e4aa2ff039b512084a,
+    type: 2}
+  m_PrefabInternal: {fileID: 738634905}
+--- !u!114 &1907300670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1907300668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c155f8e0168ad459b36961b58f0544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  resWidth: 0
+  resHeight: 0
 --- !u!1 &2035720584
 GameObject:
   m_ObjectHideFlags: 0
