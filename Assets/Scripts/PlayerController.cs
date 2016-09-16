@@ -94,14 +94,14 @@ public class PlayerController : MonoBehaviour {
     void fireMainWeapon()
     {
         nextMain = Time.time + fireRate;
-        Instantiate(mainShot, shotSpawn.position, Quaternion.Euler(0, 0, 0));
+        Instantiate(mainShot, shotSpawn.position, shotSpawn.rotation);
     }
     void fireSecondaryWeapon()
     {
         nextSecondary = Time.time + secondaryRate;
         nextMain = Time.time + fireRate;
-        leftSecond = Instantiate(secondaryShot, leftWing.position, Quaternion.Euler(0, 0, 0)) as GameObject;
-        rightSecond = Instantiate(secondaryShot, rightWing.position, Quaternion.Euler(0, 0, 0)) as GameObject;
+        leftSecond = Instantiate(secondaryShot, leftWing.position, shotSpawn.rotation) as GameObject;
+        rightSecond = Instantiate(secondaryShot, rightWing.position, rightWing.rotation) as GameObject;
         isSecondShot = true;
     }
 }

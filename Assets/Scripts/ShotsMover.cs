@@ -5,7 +5,7 @@ public class ShotsMover : MonoBehaviour {
     public float speed;
 
 	void Start () {
-        GetComponent<Rigidbody>().velocity = (new Vector3(0.0f,1.0f,0.0f)) * speed;
+        GetComponent<Rigidbody2D>().velocity = (new Vector2(0,1)) * speed;
 	}	
 	
 }
