@@ -22,8 +22,8 @@ GameObject:
   - 212: {fileID: 212000012685607578}
   - 50: {fileID: 50000012946521268}
   - 61: {fileID: 61000012200466722}
-  - 114: {fileID: 114000010564692490}
-  - 114: {fileID: 114000012429982274}
+  - 114: {fileID: 114000011306300078}
+  - 114: {fileID: 114000011608819618}
   m_Layer: 10
   m_Name: EasyShip
   m_TagString: New Tag
@@ -75,7 +75,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 4.8, y: 4.5}
---- !u!114 &114000010564692490
+--- !u!114 &114000011306300078
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -83,14 +83,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000013653871062}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94798864d66ad7645ba05110593b3de5, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e08be75573a0c540b1acb93bb29fda5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   behaviour: 
   body: {fileID: 0}
   degree: 0
   speed: 0
---- !u!114 &114000012429982274
+--- !u!114 &114000011608819618
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -98,11 +98,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000013653871062}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dbcc7fabcdfa3d42a40c970713b5cf0, type: 3}
+  m_Script: {fileID: 11500000, guid: 136884c8c3b7f374981a7aae708aa31f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 1000013329565648, guid: 27231abbf8f8d594885d391096e0127b, type: 2}
-  playerExplosion: {fileID: 1000011754371354, guid: f0cefdcbeefa4e74c900702c99b2e024,
+  explosion: {fileID: 1000010747224108, guid: c8e1de253038fca40a7034392503a0fa, type: 2}
+  playerExplosion: {fileID: 1000011252103752, guid: 78e6b289b4455c24baccee5c4f817a88,
     type: 2}
 --- !u!212 &212000012685607578
 SpriteRenderer:
@@ -133,7 +133,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1209255263
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 29db50380aa05724285124748c0f37f5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3f5bde19d6d4816478614d0d0729e9ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

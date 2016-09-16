@@ -64,7 +64,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000013613562732}
-  - 114: {fileID: 114000012649942012}
+  - 114: {fileID: 114000012213282248}
   m_Layer: 0
   m_Name: LevelController
   m_TagString: Untagged
@@ -214,7 +214,7 @@ Transform:
   - {fileID: 4000012426003040}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &114000012649942012
+--- !u!114 &114000012213282248
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000012495096900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ecea18342d38b04386173738b58f31f, type: 3}
+  m_Script: {fileID: 11500000, guid: 26d61ea217be6a94e8d10d65a85896fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawn0: {fileID: 1000012074761462}

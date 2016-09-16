@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000013528805686}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leftWing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012480135476}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: rightWing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   - 50: {fileID: 50000012156118632}
   - 114: {fileID: 114000011183586218}
   - 61: {fileID: 61000010505380890}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlayerSpaceship
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012462507726}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: shotsSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,13 +175,13 @@ MonoBehaviour:
   speed: 8
   resWidth: 1366
   resHeight: 768
-  mainShot: {fileID: 1000011057413450, guid: 1e9ba782d428b0946a91af4b142a725d, type: 2}
-  secondaryShot: {fileID: 1000011901144834, guid: 8e70ef03888daf645b8a8b4054b64878,
+  mainShot: {fileID: 1000011316388834, guid: 984b5b37ca5335344b7f5fb80556c559, type: 2}
+  secondaryShot: {fileID: 1000010749008590, guid: 27f56fcdfe0ff2a4ab02fa887a3b8d1a,
     type: 2}
   shotSpawn: {fileID: 4000012462507726}
   leftWing: {fileID: 4000013528805686}
   rightWing: {fileID: 4000012480135476}
-  fireRate: 8
+  fireRate: 0.8
 --- !u!212 &212000013876071204
 SpriteRenderer:
   m_ObjectHideFlags: 1

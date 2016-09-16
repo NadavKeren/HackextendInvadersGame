@@ -6,6 +6,9 @@ TagManager:
   tags:
   - GameBorder
   - smallExp
+  - projectile
+  - Enemy
+  - LevelController
   - New Tag
   layers:
   - Default
@@ -18,8 +21,8 @@ TagManager:
   - 
   - Projectiles
   - Player
-  - 
-  - 
+  - Enemy ships
+  - Asteroids
   - 
   - 
   - 

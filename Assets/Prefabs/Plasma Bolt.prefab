@@ -21,8 +21,8 @@ GameObject:
   - 4: {fileID: 4000014179082464}
   - 50: {fileID: 50000013043129326}
   - 61: {fileID: 61000012754894834}
-  - 114: {fileID: 114000012419634386}
-  m_Layer: 0
+  - 114: {fileID: 114000012671316904}
+  m_Layer: 8
   m_Name: Plasma Bolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011042408352}
   - 212: {fileID: 212000011739806426}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plasma shot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,12 +98,12 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.5, y: 1}
---- !u!114 &114000012419634386
+--- !u!114 &114000012671316904
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -111,10 +111,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000011316388834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f38a3805642595d42bfed7967220eb77, type: 3}
+  m_Script: {fileID: 11500000, guid: b17a63416f1316d4aa7f1c9b5559a9e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
 --- !u!212 &212000011739806426
 SpriteRenderer:
   m_ObjectHideFlags: 1
