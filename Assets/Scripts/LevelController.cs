@@ -80,6 +80,14 @@ public class LevelController : MonoBehaviour {
             enemyCreationBoolean[enemiesCounter + 1] = true;
             enemiesCounter++;
         }
+
+		else if (Time.time > 9 && enemyCreationBoolean[6])
+		{
+			createEnemy(0, "Asteroid", "normal", 4, 180);
+			enemyCreationBoolean[enemiesCounter] = false;
+			enemyCreationBoolean[enemiesCounter + 1] = true;
+			enemiesCounter++;
+		}
     }
 
     private void createEnemy(int spawnPoint, string shipType, string behaviour, float speed, float degree, int option = 1)

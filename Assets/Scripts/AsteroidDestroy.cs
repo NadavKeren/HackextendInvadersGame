@@ -13,8 +13,9 @@ public class AsteroidDestroy : MonoBehaviour {
 			return;
 		}*/
 
-		Instantiate (explosion , transform.position, transform.rotation);
-
+		//if (other.gameObject.tag != "Enemy") {
+			Instantiate (explosion, transform.position, transform.rotation);
+		
 		//Debug.Log ("COLLISION ACCURED"+other.gameObject.tag);
 		if (other.gameObject.tag == "Player") {
 			//Debug.Log ("player collision accured");
@@ -26,6 +27,6 @@ public class AsteroidDestroy : MonoBehaviour {
 
 		//System.Threading.Thread.Sleep (191);
 		//Destroy (explosion);
-
+		//}
 	}
 }

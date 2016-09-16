@@ -21,6 +21,7 @@ GameObject:
   - 4: {fileID: 4000012408846578}
   - 212: {fileID: 212000013163113102}
   - 95: {fileID: 95000011359345796}
+  - 114: {fileID: 114000010124839842}
   m_Layer: 0
   m_Name: expl2
   m_TagString: Untagged
@@ -58,6 +59,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114000010124839842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013329565648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89bcdce1c385f44db5df4679a7af75e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212000013163113102
 SpriteRenderer:
   m_ObjectHideFlags: 1

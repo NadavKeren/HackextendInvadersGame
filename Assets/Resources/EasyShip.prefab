@@ -23,9 +23,10 @@ GameObject:
   - 50: {fileID: 50000012946521268}
   - 61: {fileID: 61000012200466722}
   - 114: {fileID: 114000010564692490}
-  m_Layer: 0
+  - 114: {fileID: 114000012429982274}
+  m_Layer: 10
   m_Name: EasyShip
-  m_TagString: Untagged
+  m_TagString: New Tag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,13 +83,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000013653871062}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a0c8804c8314e34c862b15e0d05a2f2, type: 3}
+  m_Script: {fileID: 11500000, guid: 94798864d66ad7645ba05110593b3de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   behaviour: 
   body: {fileID: 0}
   degree: 0
   speed: 0
+--- !u!114 &114000012429982274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013653871062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dbcc7fabcdfa3d42a40c970713b5cf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 1000013329565648, guid: 27231abbf8f8d594885d391096e0127b, type: 2}
+  playerExplosion: {fileID: 1000011754371354, guid: f0cefdcbeefa4e74c900702c99b2e024,
+    type: 2}
 --- !u!212 &212000012685607578
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -118,7 +133,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1209255263
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fe808599652093445a9a0d0304b9f9c1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 29db50380aa05724285124748c0f37f5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -24,7 +24,8 @@ GameObject:
   - 114: {fileID: 114000013614625532}
   - 50: {fileID: 50000011641240192}
   - 114: {fileID: 114000010823395440}
-  m_Layer: 0
+  - 114: {fileID: 114000013612219692}
+  m_Layer: 11
   m_Name: Asteroid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,6 +280,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -2
+--- !u!114 &114000013612219692
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012462657380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94798864d66ad7645ba05110593b3de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behaviour: 
+  body: {fileID: 0}
+  degree: 0
+  speed: 0
 --- !u!114 &114000013614625532
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -290,8 +306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dbcc7fabcdfa3d42a40c970713b5cf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 1000010541743608, guid: b9311db1c5aab514d8991c9b8713c72c, type: 2}
-  playerExplosion: {fileID: 1000010373092672, guid: 289b6b00092afcd4b8484bff1d169c6c,
+  explosion: {fileID: 1000013329565648, guid: 27231abbf8f8d594885d391096e0127b, type: 2}
+  playerExplosion: {fileID: 1000011754371354, guid: f0cefdcbeefa4e74c900702c99b2e024,
     type: 2}
 --- !u!212 &212000010072825064
 SpriteRenderer:

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GameBorder
   - smallExp
+  - Enemy
   - New Tag
   layers:
   - Default
@@ -16,10 +17,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Background
+  - Player
+  - Enemy ships
+  - Asteroids
   - 
   - 
   - 
