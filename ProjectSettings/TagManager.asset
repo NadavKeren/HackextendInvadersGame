@@ -5,8 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - GameBorder
-  - smallExp
-  - projectile
+  - SmallExp
+  - Projectiles
   - Enemy
   - LevelController
   - New Tag
@@ -47,15 +47,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: background
+  - name: Background
     uniqueID: 330558929
     locked: 0
-  - name: player
+  - name: Player
     uniqueID: 1209255263
     locked: 0
-  - name: projectiles
+  - name: Projectiles
     uniqueID: 1145085237
     locked: 0
-  - name: asteroids
+  - name: Asteroids
     uniqueID: 3986430325
     locked: 0

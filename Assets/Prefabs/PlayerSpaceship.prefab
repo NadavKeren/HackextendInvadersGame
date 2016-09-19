@@ -175,8 +175,8 @@ MonoBehaviour:
   speed: 8
   resWidth: 1366
   resHeight: 768
-  mainShot: {fileID: 1000011316388834, guid: 984b5b37ca5335344b7f5fb80556c559, type: 2}
-  secondaryShot: {fileID: 1000010749008590, guid: 27f56fcdfe0ff2a4ab02fa887a3b8d1a,
+  mainShot: {fileID: 1000011316388834, guid: f5548db8d0edeff42a2744563a016073, type: 2}
+  secondaryShot: {fileID: 1000010749008590, guid: 1d73bfe4f09d3cd469b9ac0ba8065c91,
     type: 2}
   shotSpawn: {fileID: 4000012462507726}
   leftWing: {fileID: 4000013528805686}
