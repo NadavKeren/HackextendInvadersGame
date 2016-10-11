@@ -9,7 +9,6 @@ TagManager:
   - Projectiles
   - Enemy
   - LevelController
-  - New Tag
   layers:
   - Default
   - TransparentFX
@@ -22,7 +21,7 @@ TagManager:
   - Projectiles
   - Player
   - Enemy ships
-  - Asteroids
+  - Explosions
   - 
   - 
   - 
@@ -50,12 +49,15 @@ TagManager:
   - name: Background
     uniqueID: 330558929
     locked: 0
+  - name: Explosions
+    uniqueID: 1100521677
+    locked: 0
   - name: Player
     uniqueID: 1209255263
     locked: 0
   - name: Projectiles
     uniqueID: 1145085237
     locked: 0
-  - name: Asteroids
+  - name: Enemy ships
     uniqueID: 3986430325
     locked: 0

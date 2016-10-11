@@ -24,9 +24,9 @@ GameObject:
   - 50: {fileID: 50000011641240192}
   - 114: {fileID: 114000013567772072}
   - 114: {fileID: 114000012735858618}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Asteroid
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

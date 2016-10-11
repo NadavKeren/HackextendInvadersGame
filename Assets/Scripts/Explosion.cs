@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class exp1Destroy : MonoBehaviour {
+public class Explosion : MonoBehaviour {
 
 	private float delay = 0.15f;
 
